@@ -9,30 +9,29 @@
 
 	<style>
 
-	/*.logo{
+/*.logo{
 
+display: inline;
+padding-left: 15px;
+list-style:none;
+height: 30px;
+
+}*/
+
+	.animated #static, .static #animated {
+		display: none;
+	}
+	.animated #animated, .static #static {
 		display: inline;
-		padding-left: 15px;
-		list-style:none;
-		height: 30px;
+	}
 
-		}*/
+	</style>
 
-		.animated #static, .static #animated {
-			display: none;
-		}
-		.animated #animated, .static #static {
-			display: inline;
-		}
+</head>
 
-		</style>
+<body>
 
-
-	</head>
-
-	<body>
-
-		<div id="topbar">
+	<div id="topbar">
 
 			<!-- <img src="logo.jpg"class="logo" style="height:170px;width:280px"> -->
 
@@ -40,127 +39,127 @@
 
 			<!-- <div id="menu bar"> -->
 
-			<!-- <ul>
-				<li><a href='index.html'><img src="logo.jpg"class="logo" style="height:170px;width:280px"></a></li>
+	<!-- <ul>
+		<li><a href='index.html'><img src="logo.jpg"class="logo" style="height:170px;width:280px"></a></li>
 
-				<ul>
-				-->
-				<div id='cssmenu'>
+		<ul>
+		-->
+		<div id='cssmenu'>
+			<ul>
+				<li class="has-image"><a href='index.html'><img src="logo.jpg"class="logo" style="height:170px;width:280px"></a></li> 						
+				<li class='active'><a href='index.html'><span>Home</span></a></li>
+				<li class='has-sub'><a href='#'><span>Products</span></a>
 					<ul>
-						<li class="has-image"><a href='index.html'><img src="logo.jpg"class="logo" style="height:170px;width:280px"></a></li> 						
-						<li class='active'><a href='index.html'><span>Home</span></a></li>
-						<li class='has-sub'><a href='#'><span>Products</span></a>
+						<li class='has-sub'><a href='#'><span>Product 1</span></a>
 							<ul>
-								<li class='has-sub'><a href='#'><span>Product 1</span></a>
-									<ul>
-										<li><a href='#'><span>Sub Item</span></a></li>
-										<li class='last'><a href='#'><span>Sub Item</span></a></li>
-									</ul>
-								</li>
-								<li class='has-sub'><a href='#'><span>Product 2</span></a>
-									<ul>
-										<li><a href='#'><span>Sub Item</span></a></li>
-										<li class='last'><a href='#'><span>Sub Item</span></a></li>
-									</ul>
-								</li>
+								<li><a href='#'><span>Sub Item</span></a></li>
+								<li class='last'><a href='#'><span>Sub Item</span></a></li>
 							</ul>
 						</li>
-						<li><a href='#'><span>About</span></a></li>
-						<li class='last'><a href='#'><span>Contact</span></a></li>
+						<li class='has-sub'><a href='#'><span>Product 2</span></a>
+							<ul>
+								<li><a href='#'><span>Sub Item</span></a></li>
+								<li class='last'><a href='#'><span>Sub Item</span></a></li>
+							</ul>
+						</li>
 					</ul>
-				</div>
+				</li>
+				<li><a href='#'><span>About</span></a></li>
+				<li class='last'><a href='#'><span>Contact</span></a></li>
+			</ul>
+		</div>
 
-				<!-- </div> -->
+		<!-- </div> -->
 
 
-			</div>
+	</div>
 
-			<br/>
+	<br/>
 
-			<!-- <div class="container"> -->
+	<!-- <div class="container"> -->
 
-			<div class="col-md-2" style="background:red">
+	<div class="col-md-2" style="background:red">
 
-				<br/>
+		<br/>
 
-			</div>
+	</div>
 
-			<div class="col-md-9" style="background:blue">
+	<div class="col-md-9" style="background:blue">
 
-				<br/>
-				<a id="img_wrap" class="img_wrap static" href="http://www.google.com">
-					<img id="animated" src="animated.gif" alt="" style="width: 200px; height:200px">
-					<img id="static" src="reg.jpg" alt="" style="width: 200px; height:200px">
-				</a>
+		<br/>
+		<a id="img_wrap" class="img_wrap static" href="http://www.google.com">
+			<img id="animated" src="reg.gif" alt="" style="width: 200px; height:200px">
+			<img id="static" src="reg.jpg" alt="" style="width: 200px; height:200px">
+		</a>
 
-				<a id="img_wrap" class="img_wrap static" href="http://www.google.com">
-					<img id="animated" src="animated.gif" alt="" style="width: 200px; height:200px">
-					<img id="static" src="logo.jpg" alt="" style="width: 200px; height:200px">
-				</a>
+		<a id="img_wrap" class="img_wrap static" href="http://www.google.com">
+			<img id="animated" src="login.gif" alt="" style="width: 200px; height:200px">
+			<img id="static" src="login.jpg" alt="" style="width: 200px; height:200px">
+		</a>
 
-			</div>
+	</div>
 
-			<div class="col-md-1" style="background:green; text-align:center">
+	<div class="col-md-1" style="background:green; text-align:center">
 
-				<button class="btn btn-primary">Login</button> <br/> <br/>
-				<button class="btn btn-primary">Register</button>
+		<button class="btn btn-primary">Login</button> <br/> <br/>
+		<button class="btn btn-primary">Register</button>
 
-				
+		
 
-			</div> 
+	</div> 
 
-			<!-- </div> -->
+<!-- </div> -->
 
-		</body>
+</body>
 
-		<script>
+<script>
 
-		// $(function(){
-		// 	$('#img_wrap').on('mouseenter', function() {
+// $(function(){
+// 	$('#img_wrap').on('mouseenter', function() {
 
-		// 		// $(this).toggleClass('animated', 'static');
+// 		// $(this).toggleClass('animated', 'static');
 
-		// 		// $("#animated").css("display", "inline");
-		// 		// $("#static").css("display", "none");
+// 		// $("#animated").css("display", "inline");
+// 		// $("#static").css("display", "none");
 
-		// 		$(this).children("#animated").css("display", "inline");
-		// 		$(this).children("#static").css("display", "none");
-		// 	});
+// 		$(this).children("#animated").css("display", "inline");
+// 		$(this).children("#static").css("display", "none");
+// 	});
 
-		// 	$('#img_wrap').on('mouseleave', function() {
+// 	$('#img_wrap').on('mouseleave', function() {
 
-		// 		// $(this).toggleClass('animated', 'static');
+// 		// $(this).toggleClass('animated', 'static');
 
-		// 		// $("#animated").css("display", "none");
-		// 		// $("#static").css("display", "inline");
+// 		// $("#animated").css("display", "none");
+// 		// $("#static").css("display", "inline");
 
-		// 		$(this).children("#animated").css("display", "none");
-		// 		$(this).children("#static").css("display", "inline");
-		// 	});
-		// });
+// 		$(this).children("#animated").css("display", "none");
+// 		$(this).children("#static").css("display", "inline");
+// 	});
+// });
 
 $(".img_wrap").each(function(){
 	$(this).on('mouseenter', function() {
 
-				// $(this).toggleClass('animated', 'static');
+		// $(this).toggleClass('animated', 'static');
 
-				// $("#animated").css("display", "inline");
-				// $("#static").css("display", "none");
+		// $("#animated").css("display", "inline");
+		// $("#static").css("display", "none");
 
-				$(this).children("#animated").css("display", "inline");
-				$(this).children("#static").css("display", "none");
-			});
+		$(this).children("#animated").css("display", "inline");
+		$(this).children("#static").css("display", "none");
+	});
 
 	$(this).on('mouseleave', function() {
 
-				// $(this).toggleClass('animated', 'static');
+		// $(this).toggleClass('animated', 'static');
 
-				// $("#animated").css("display", "none");
-				// $("#static").css("display", "inline");
+		// $("#animated").css("display", "none");
+		// $("#static").css("display", "inline");
 
-				$(this).children("#animated").css("display", "none");
-				$(this).children("#static").css("display", "inline");
-			});
+		$(this).children("#animated").css("display", "none");
+		$(this).children("#static").css("display", "inline");
+	});
 });
 
 </script>
