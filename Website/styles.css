@@ -55,14 +55,14 @@
 }
 /* Theme Styles */
 #cssmenu > ul {
-  border-top: 4px solid #3fa338;
+  border-top: 4px solid #48b39e;
   font-family: Calibri, Tahoma, Arial, sans-serif;
   font-size: 14px;
-  background: #1e1e1e;
-  background: -moz-linear-gradient(top, #1e1e1e 0%, #040404 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #1e1e1e), color-stop(100%, #040404));
-  background: -webkit-linear-gradient(top, #1e1e1e 0%, #040404 100%);
-  background: linear-gradient(top, #1e1e1e 0%, #040404 100%);
+  background: #000000;
+  background: -moz-linear-gradient(top, #000000 0%, #000000 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #000000), color-stop(100%, #000000));
+  background: -webkit-linear-gradient(top, #000000 0%, #000000 100%);
+  background: linear-gradient(top, #000000 0%, #000000 100%);
   width: auto;
   zoom: 1;
 }
@@ -81,7 +81,7 @@
 }
 #cssmenu > ul > li.active,
 #cssmenu > ul > li.active:hover {
-  background-color: #3fa338;
+  background-color: #48b39e;
 }
 #cssmenu > ul > li > a:link,
 #cssmenu > ul > li > a:active,
@@ -105,7 +105,7 @@
 }
 #cssmenu > ul > li.hover,
 #cssmenu > ul > li:hover {
-  background-color: #3fa338;
+  background-color: #48b39e;
   -webkit-box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.15);
   -moz-box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.15);
   box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.15);
