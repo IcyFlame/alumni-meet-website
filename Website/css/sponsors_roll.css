@@ -73,7 +73,7 @@
 {
 	position: absolute;
 	width: 18em;
-	height: 50em;
+	height: 30em;
 	bottom: 0;
 	left: 0%;
 	margin-left: 0em;
@@ -128,26 +128,26 @@
 
 /* animation */
 @-webkit-keyframes scroll {
-	0% { top: 0%; }
+	0% { top: 100%; }
 	100% { top: -100%; }
 }
 
 @-moz-keyframes scroll {
-	0% { top: 0%; }
+	0% { top: 100%; }
 	100% { top: -100%; }
 }
 
 @-ms-keyframes scroll {
-	0% { top: 0%; }
+	0% { top: 100%; }
 	100% { top: -100%; }
 }
 
 @-o-keyframes scroll {
-	0% { top: 0%; }
+	0% { top: 100%; }
 	100% { top: -100%; }
 }
 
 @keyframes scroll {
-	0% { top: 0%; }
+	0% { top: 100%; }
 	100% { top: -100%; }
 }
