@@ -18,4 +18,4 @@ function ws_photo(c,f,h){var d=jQuery,j=d("ul",h),h=h.parent(),g=f.length,u=c.im
 // Obfuscated by Javascript Obfuscator
 // http://javascript-source.com
 //***********************************************
-jQuery("#wowslider-container1").wowSlider({effect:"photo",prev:"",next:"",duration:20*100,delay:40*100,width:768,height:480,autoPlay:true,playPause:true,stopOnHover:false,loop:false,bullets:true,caption:true,captionEffect:"slide",controls:true,onBeforeStep:0,images:0});
+jQuery("#wowslider-container1").wowSlider({effect:"photo",prev:"",next:"",duration:20*100,delay:33*100,width:768,height:400,autoPlay:true,playPause:true,stopOnHover:false,loop:false,bullets:true,caption:true,captionEffect:"slide",controls:true,onBeforeStep:0,images:0});
