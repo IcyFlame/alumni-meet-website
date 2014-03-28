@@ -1,0 +1,143 @@
+<html>
+<head>
+
+	<title>12th Alumni Meet</title>
+
+	<link rel="stylesheet" href="css/menubar.css">
+	<link rel="stylesheet" href="css/button.css">
+	<link rel="stylesheet" href="css/body_customise.css">
+
+	<script src="js/jquery-2.1.0.min.js"></script>
+	<script type="text/javascript" src="gallery/thumbslide.js">
+
+
+	</script>
+	<link rel="stylesheet" type="text/css" href="gallery/thumbslide.css" />
+
+	<script>
+
+//Initialization code:
+$(document).ready(function(){ // on document load
+
+		$("#thumbsliderdiv").imageSlider({ //initialize slider
+			'thumbs': ["gallery/images/1.jpg","gallery/images/2.jpg","gallery/images/3.jpg","gallery/images/4.jpg","gallery/images/5.jpg","gallery/images/6.jpg"], // file names of images within slider.
+			'auto_scroll':true,
+			'auto_scroll_speed':4500,
+			'stop_after': 2, //stop after x cycles? Set to 0 to disable.
+			'canvas_width':700,
+			'canvas_height':500
+		})
+	});
+
+</script>
+</head>
+
+<body background="bg.jpg">
+
+
+	<div id="topbar" class="navbar">
+		<a href="home_[age.html"><img src="logo.jpg" class="logo" style="height:170px; width:280px"></a>
+
+		<div id="cssmenu">		
+
+			<ul>
+				<!-- <li class="has-image"><a href='index.html'><img src="logo.jpg" class="logo" style="height:170px;width:280px"></a></li> -->
+				<li><a href='home_page.html'><span>Home</span></a></li>
+				<li class='has-sub'><a href='#'><span>Meet 2015</span></a>
+					<ul>
+						<li><a href='why2come.html'><span>Why to Come</span></a></li>
+						<li><a href='#'><span>Events</span></a></li>
+						<li><a href='#'><span>Yearnings of Yore</span></a></li>
+						<li class='last'><a href='documents/invitation_brochure.pdf'><span>Invitation Brochure</span></a></li>
+					</ul>
+				</li>
+				<li><a href='last_meet.html'><span>Last Meet</span></a></li>
+				<li><a href='gallery.html'><span>Gallery</span></a></li>
+				<li><a href='#'><span>Students'Alumni Cell</span></a></li>
+				<li class='has-sub'><a href='#'><span>Sponsers</span></a>
+					<ul>
+						<li><a href='#'><span>Sponsers 2014</span></a></li>
+						<li><a href='#'><span>Sponsers 2013</span></a></li>
+						<li><a href='#'><span>Sponsers 2012</span></a></li>
+						<li class='last'><a href='#'><span>Official TimeKeeper</span></a></li>
+					</ul>					
+
+				</li>
+				<li class='last'><a href='contact.html'><span>Contact</span></a></li>
+			</ul>			
+
+		</div>
+
+	</div>
+
+	<br/>
+	<br/>
+
+	<div id="slidd" style="position:relative;top:-20px;height:590px;width:855px;background:transparent;left:150px;float:left;background-image:url('#');padding-left:20px;padding-right:20px;padding-top:20px;margin-bottom:40px"> 
+		<h2 align="center"><font color="white" face="Calibri ">Photo Gallery</font></h2>
+		<div id="thumbsliderdiv" class="col-md-10"></div></div>
+
+	<!-- <div class="col-md-2" style="background:; margin-top:100px; margin-left:70px;text-align:center">
+
+			<br/>
+			<button class="btn btn-primary btn-lg">Login</button> <br/> <br/>
+			<button class="btn btn-success btn-lg">Register</button>
+
+			<br/> <br/>
+
+			<div>
+
+				<a href="https://www.facebook.com/iitkgp.alumnicell" target="a_blank">
+					<img src="social-images/facebook.gif" height="40px" width="40px">
+				</a> <br/> <br/>
+
+				<a href="https://www.facebook.com/IIT.Kgp/app_116943498446376" target="a_blank">
+					<img src="social-images/twitter.png" height="35px" width="44px">
+				</a> <br/> <br/>
+
+				<a href="#" target="a_blank">
+					<img src="social-images/linkedin.png" height="48px" width="58px">
+				</a> <br/> <br/>
+
+			</div>		
+		</div> -->
+
+
+		<div class="col-md-2" style="background:; text-align:center;margin-top:100px; margin-left:70px;">
+
+			<!-- <br/>
+			<button class="btn btn-primary btn-lg">Login</button> <br/> <br/>
+			<a href="registration_form/form.html"><button class="btn btn-success btn-lg">Register</button></a>
+
+			<br/> <br/>
+		-->
+
+		<br/>
+
+		<a href="#"><button class="Login"><span style="color: black">Login</span></button></a> <br/> <br/>
+		<a href="form.html"><button class="Register"><span style="color: black">Register</span></button></a>
+
+		<br/> <br/>
+
+		<div>
+
+			<a href="https://www.facebook.com/iitkgp.alumnicell" target="a_blank">
+				<img src="social-images/facebook.gif" height="40px" width="40px">
+			</a> <br/> <br/>
+
+			<a href="https://www.facebook.com/IIT.Kgp/app_116943498446376" target="a_blank">
+				<img src="social-images/twitter.png" height="35px" width="44px">
+			</a> <br/> <br/>
+
+			<a href="#" target="a_blank">
+				<img src="social-images/linkedin.png" height="48px" width="58px">
+			</a> <br/> <br/>
+
+		</div>		
+
+	</div> 
+
+
+</div>
+</body>
+</html>
