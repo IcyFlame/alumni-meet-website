@@ -1,0 +1,33 @@
+.Register{
+    background:green;
+    opacity:0.8;
+    -webkit-border-radius:25px;
+    /*-webkit-box-shadow:rgb(110,110,110) 5px 5px 5px;*/
+    width:100px;
+    height:55px;
+    -webkit-transition:opacity 0.5s,background 1s;
+}
+
+.Register:hover {
+
+    opacity:1;
+    background:#1ec7e6;
+
+}
+
+.Login{
+    background:blue;
+    opacity:0.8;
+    -webkit-border-radius:25px;
+    /*-webkit-box-shadow:rgb(110,110,110) 5px 5px 5px;*/
+    width:100px;
+    height:55px;
+    -webkit-transition:opacity 0.5s,background 1s;
+}
+
+.Login:hover {
+
+    opacity:1;
+    background:#1ec7e6;
+
+}

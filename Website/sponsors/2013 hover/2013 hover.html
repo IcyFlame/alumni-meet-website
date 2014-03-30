@@ -1,0 +1,229 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+<title>Rotate3Di Nav List Demo</title>
+
+
+<link rel="stylesheet" href="../../css/base.css" type="text/css" media="screen" />
+
+	<link rel="stylesheet" href="../../css/menubar.css">
+
+
+	<script src="../../js/jquery-2.1.0.min.js"></script>
+
+<style type="text/css" media="screen">
+body {
+    background:url(images/back.jpg);
+	background-repeat: repeat;
+		max-height: 100%;
+		max-width: 100%;
+		margin-left: 15px; 
+		margin-right: 15px;}
+
+h2 a {
+    display: block;
+    padding: 48px 0;
+}
+
+p a {
+    display: block;
+    padding: 36px 24px;
+}
+
+#new{margin-left:265px;}
+#new2{margin-left:95px;}
+#new3{margin-left:175px;}
+
+#nav-list-example {
+    height: 132px;
+    width: 700px;
+    margin:50px 0;
+}
+
+#nav-list-example li {
+    width:150px;
+    height: 200px;
+    float: left;
+    margin-right: 24px;
+    position: relative;
+}
+
+#nav-list-example li div {
+    width: 165px;
+    height: 150px;
+    overflow: hidden;
+    background:#FFFFCC;
+    position:absolute;
+    top: 2000;
+    left: 100;
+}
+
+#nav-list-example li div.back {
+    left: -555em;
+    background:#996666;}
+</style>
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/base.js"></script>
+<script type="text/javascript" src="../../js/rotate3di.js"></script>
+
+<script type="text/javascript" language="javascript" charset="utf-8">
+$(document).ready(function () {
+    $('#nav-list-example li div.back').hide().css('left', 0);
+    
+    function mySideChange(front) {
+        if (front) {
+            $(this).parent().find('div.front').show();
+            $(this).parent().find('div.back').hide();
+            
+        } else {
+            $(this).parent().find('div.front').hide();
+            $(this).parent().find('div.back').show();
+        }
+    }
+    
+    $('#nav-list-example li').hover(
+        function () {
+            $(this).find('div').stop().rotate3Di('flip', 250, {direction: 'clockwise', sideChange: mySideChange});
+        },
+        function () {
+            $(this).find('div').stop().rotate3Di('unflip', 500, {sideChange: mySideChange});
+        }
+    );
+});
+</script>
+
+</head>
+<body  >
+<div id="topbar" class="hero-unit">
+		<a href="../../home_page.html"><img src="../../logo.jpg" class="logo" style="height:170px;width:280px"></a>
+
+		<div id='cssmenu' style="margin-left: auto; margin-right: auto;">		
+
+			<ul>
+				<!-- <li class="has-image"><a href='index.html'><img src="logo.jpg" class="logo" style="height:170px;width:280px"></a></li> -->
+				<li><a href='../../home_page.html'><span>Home</span></a></li>
+				<li class='has-sub'><a href='#'><span>Meet 2015</span></a>
+					<ul>
+						<li><a href='#'><span>Why to Come</span></a></li>
+						<li><a href='#'><span>Events</span></a></li>
+						<li><a href='#'><span>Yearnings of Yore</span></a></li>
+						<li class='last'><a href='#'><span>Invitation Brochure</span></a></li>
+					</ul>
+				</li>
+				<li><a href='#'><span>Last Meet</span></a></li>
+				<li><a href='#'><span>Gallery</span></a></li>
+				<li><a href='#'><span>Students'Alumni Cell</span></a></li>
+				<li class='has-sub'><a href='#'><span>Sponsors</span></a>
+					<ul>
+						<li><a href='../2014 hover/2014 hover.html' ><span>Sponsors 2014</span></a></li>
+						<li><a href='../2013 hover/2013 hover.html' ><span>Sponsors 2013</span></a></li>
+						<li><a href='../2012 hover/2012 hover.html' ><span>Sponsors 2012</span></a></li>
+						<li class='last'><a href='../otkp hover/otkp.html' ><span>Official TimeKeeper</span></a></li>
+					</ul>
+				</li>
+				<li class='last'><a href='#'><span>Contact</span></a></li>
+			</ul>			
+
+		</div>
+<br />
+	</div> <br /><h1> SPONSORS 2013</h1><center><br /><br />
+<hr color="#CC6699" size="4px" align="center"  style="border-right-color:#006633" width="800px" title="my hover" /><br /><br />
+<ul id="nav-list-example">
+ <div style="background-color:#CCCC99" align="center" style="border:1px solid red">
+<h1>CO-SPONSORS</h1></div></br >
+<div id="new" >
+   <li>
+        <div class="front">
+		                   <h2><img src="images/1.png" alt="More about us" /></h2></div>
+		 <a href="http://www.adhunikgroup.com/"><div class="back">
+		 		 <center><br /><br /><font color="#00CCFF">www.adhunikgroup.com/</font></center></div></a>
+ </li></div><br /><br /><br /><br /><br /><br /></br></br></br>
+ <div style="background-color:#CCCC99" align="center" style="border:1px solid red">
+<h1>MAJOR-SPONSORS</h1></div></br ><br />
+<div id="new3" >
+ 
+    <li>
+        <div class="front"><h2><img src="images/2.png" alt="More about us" /></h2></div>
+       <a href="http://www.in.issworld.com/en"> <div class="back">
+		<center><br /><br /><font color="#00CCFF">www.in.issworld.com/</font></center></div></a>
+    </li>
+    <li>
+        <div class="front"><h2>	<img src="images/3.png" alt="More about us" /></h2></div>
+        <a href="http://www.tetrapak.com/in/pages/default.aspx"><div class="back"><center><br /><br /><font color="#00CCFF">www.tetrapak.com/</font></center></div></a>
+    </li></div><br /><br /><br /><br /><br /><br /></br></br></br>
+	
+	<h1><div style="background-color:#CCCC99" align="center" style="border:1px solid red">EVENT-SPONSORS</div></h1></br ><br />
+<div id="new2" >
+    <li>
+        <div class="front"><h2>	<img src="images/4.png" alt="More about us" /></h2></div><a href="http://www.sardamagnets.com/">
+        <div class="back"><center><br /><br /><font color="#00CCFF">www.sardamagnets.com/</font></center></div></a>
+    </li>
+	 <li>
+        <div class="front"><h2>	<img src="images/5.png" alt="More about us" /></h2></div><a href="https://www.signotron.in/">
+        <div class="back"><center><br /><br /><font color="#00CCFF">www.signotron.in/</font></center></div></a>
+    </li>
+	 <li>
+        <div class="front"><h2>	<img src="images/6.png" alt="More about us" /></h2></div><a href="http://www.bseindia.com/">
+        <div class="back"><center><br /><br /><font color="#00CCFF">www.bseindia.com/</font></center></div></a>
+    </li></div><br /><br /><br /><br /><br /><br /></br></br><br />
+	
+<div id="new2" >
+	 <li>
+        <div class="front"><h2>	<img src="images/7.png" alt="More about us" /></h2></div><a href="http://www.airtel.in/forme/home">
+        <div class="back"><center><br /><br /><font color="#00CCFF">www.airtel.in/</font></center></div></a>
+    </li>
+	 <li>
+        <div class="front"><h2>	<img src="images/8.png" alt="More about us" /></h2></div><a href="http://www.wbsedcl.in/irj/go/km/docs/internet/webpage/HomePage.html">
+        <div class="back"><center><br /><br /><font color="#00CCFF">www.wbsedcl.in/</font></center></div></a>
+    </li>
+	 <li>
+        <div class="front"><h2>	<img src="images/9.png" alt="More about us" /></h2></div><a href="http://www.ddccis4.org/">
+        <div class="back"><center><br /><br /><font color="#00CCFF">www.ddccis4.org/</font></center></div></a>
+    </li></div><br /><br /><br /><br /><br /><br /></br></br><br />
+	
+<div id="new2" >
+	 <li>
+        <div class="front"><h2>	<img src="images/10.png" alt="More about us" /></h2></div><a href="http://www.itchotels.in/hotels/itcsonar.aspx">
+        <div class="back"><center><br /><br /><font color="#00CCFF">www.itchotels.in/</font></center></div></a>
+    </li>
+	 <li>
+        <div class="front"><h2>	<img src="images/11.png" alt="More about us" /></h2></div><a href="http://www.coca-colaindia.com/">
+        <div class="back"><center><br /><br /><font color="#00CCFF">www.coca-colaindia.com/</font></center></div></a>
+    </li>
+	 <li>
+        <div class="front"><h2>	<img src="images/12.png" alt="More about us" /></h2></div><a href="http://www.nepamills.co.in/">
+        <div class="back"><center><br /><br /><font color="#00CCFF">www.nepamills.co.in/</font></center></div></a>
+    </li></div><br /><br /><br /><br /><br /><br /></br></br><br />
+	<div id="new2" >
+	 <li>
+        <div class="front"><h2>	<img src="images/13.png" alt="More about us" /></h2></div><a href="http://www.haymarket.com/home.aspx">
+        <div class="back"><center><br /><br /><font color="#00CCFF">www.haymarket.com/</font></center></div></a>
+    </li>
+	 <li>
+        <div class="front"><h2>	<img src="images/14.png" alt="More about us" /></h2></div><a href="http://www.bulforio.com/">
+        <div class="back"><center><br /><br /><font color="#00CCFF">www.bulforio.com/</font></center></div></a>
+    </li>
+	<li>
+        <div class="front"><h2>	<img src="images/15.png" alt="More about us" /></h2></div><a href="http://www.angesbags.com/home.html">
+        <div class="back"><center><br /><br /><font color="#00CCFF">www.angesbags.com/</font></center></div></a>
+    </li></div><br /><br /><br /><br /><br /><br /></br></br><br />
+<div id="new3">
+<li>
+        <div class="front"><h2>	<img src="images/16.png" alt="More about us" /></h2></div><a href="http://www.rechargeguru.com/do/">
+        <div class="back"><center><br /><br /><font color="#00CCFF">www.rechargeguru.com/</font></center></div></a>
+    </li>
+	<li>
+        <div class="front"><h2>	<img src="images/17.png" alt="More about us" /></h2></div><a href="http://www.kapsystem.com/">
+        <div class="back"><center><br /><br /><font color="#00CCFF">www.kapsystem.com/</font></center></div></a>
+    </li></div>
+
+
+</ul></center>
+
+</body>
+</html>
