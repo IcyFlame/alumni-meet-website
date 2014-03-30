@@ -4,13 +4,16 @@
   <meta charset="utf-8">
   <meta http-equiv="Content-Type" content="text/html">
   <title>Events</title>
+  
 
-  <?php include("css_events.php"); ?>
+  <?php include("mainStyle.php"); ?>
 
-  <link rel="stylesheet" type="text/css" media="all" href="events_css/styles.css">
+
+  <link rel="stylesheet" type="text/css" media="all" href="css/events_styles.css">
   
   <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
-  <script type="text/javascript" src="events_js/scrollview.js"></script>
+  <script type="text/javascript" src="js/scrollview.js"></script>
+
 </head>
 <style type="text/css" media="screen">
 body {
@@ -65,9 +68,10 @@ p a {
   </style>
 
   <body>
-
     <div id="topbar" class="navbar">
-      <?php include("menubar.php");?>
+
+      <?php include("menubar.php"); ?>
+
     </div>
 
     <br/>
@@ -76,8 +80,9 @@ p a {
 
     <div id="w">
 
-      <?php include("events_content.php"); ?>
+      <?php include("content_events.php"); ?>
 
-    </div>
+    </div><!-- @end #content -->
+
   </body>
   </html>
