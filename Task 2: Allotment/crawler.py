@@ -74,10 +74,4 @@ for i, dep in enumerate(depnames):
         filout.write(dep + ": " + aoi + delimiter + str(overallCount) + "\n")
         overallCount += 1
 
-filout.close()     
-
-        
-
-        
-
-        
+filout.close()
