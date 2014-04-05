@@ -18,10 +18,10 @@
 		<li class='has-sub'><a href='#'><span>Sponsers</span></a>
 
 			<ul>
-				<li><a href='page-sponsors/2014/sponsors14.php' target="_blank"><span>Sponsors 2014</span></a></li>
-				<li><a href='page-sponsors/2013/sponsors13.php' target="_blank"><span>Sponsors 2013</span></a></li>
-				<li><a href='page-sponsors/2012/sponsors12.php' target="_blank"><span>Sponsors 2012</span></a></li>
-				<li class='last'><a href='page-sponsors/otkp/otkp.php' target="_blank"><span>Official TimeKeeper</span></a></li>
+				<li><a href='sponsors14.php'><span>Sponsors 2014</span></a></li>
+				<li><a href='sponsors13.php'><span>Sponsors 2013</span></a></li>
+				<li><a href='sponsors12.php'><span>Sponsors 2012</span></a></li>
+				<li class='last'><a href='otkp.php' target="_blank"><span>Official TimeKeeper</span></a></li>
 			</ul>
 
 
