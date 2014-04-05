@@ -1,0 +1,258 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+    <title>Rotate3Di Nav List Demo</title>
+
+    <link rel="stylesheet" href="../../css/base.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="../../css/menubar.css">
+    <style type="text/css" media="screen">
+    body {
+        background:url(images/back.jpg);
+        background-repeat: repeat;
+        max-height: 100%;
+        max-width: 100%;
+        margin-left: 15px; 
+        margin-right: 15px;
+    }
+
+    h2 a {
+        display: block;
+        padding: 48px 0;
+    }
+
+    p a {
+        display:block;
+        padding: 36px 24px;
+    }
+
+    #nav-list-example {
+        height: 132px;
+        width: 700px;
+        margin:50px 0;
+    }
+
+    #nav-list-example li {
+        width:150px;
+        height: 200px;
+        float: left;
+        margin-right: 24px;
+        position: relative;
+    }
+
+
+    #new{margin-left:265px;}
+    #new2{margin-left:95px;}
+    #new3{margin-left:175px;}
+
+    #nav-list-example li div {
+
+        width: 165px;
+        height: 150px;
+        overflow: hidden;
+        background:#FFFFCC;
+        position:absolute;
+        top: 2000;
+        left: 100;
+    }
+
+    #nav-list-example li div.back {
+        left: -555em;
+        background:#996666;}
+        </style>
+
+        <script type="text/javascript" src="../../js/jquery.js"></script>
+        <script type="text/javascript" src="../../js/base.js"></script>
+        <script type="text/javascript" src="../../js/rotate3di.js"></script>
+
+        <script type="text/javascript" language="javascript" charset="utf-8">
+        $(document).ready(function () {
+            $('#nav-list-example li div.back').hide().css('left', 0);
+
+            function mySideChange(front) {
+                if (front) {
+                    $(this).parent().find('div.front').show();
+                    $(this).parent().find('div.back').hide();
+
+                } else {
+                    $(this).parent().find('div.front').hide();
+                    $(this).parent().find('div.back').show();
+                }
+            }
+
+            $('#nav-list-example li').hover(
+                function () {
+                    $(this).find('div').stop().rotate3Di('flip', 250, {direction: 'clockwise', sideChange: mySideChange});
+                },
+                function () {
+                    $(this).find('div').stop().rotate3Di('unflip', 500, {sideChange: mySideChange});
+                }
+                );
+        });
+        </script>
+
+    </head>
+    <body  >
+        <div id="topbar" class="hero-unit">
+          <a href="../../home_page.html"><img src="../../logo.jpg" class="logo" style="height:170px;width:280px"></a>
+
+          <div id='cssmenu' style="margin-left: auto; margin-right: auto;">		
+
+           <ul>
+            <!-- <li class="has-image"><a href='index.html'><img src="logo.jpg" class="logo" style="height:170px;width:280px"></a></li> -->
+            <li><a href='../../home_page.html'><span>Home</span></a></li>
+            <li class='has-sub'><a href='#'><span>Meet 2015</span></a>
+             <ul>
+              <li><a href='#'><span>Why to Come</span></a></li>
+              <li><a href='#'><span>Events</span></a></li>
+              <li><a href='#'><span>Yearnings of Yore</span></a></li>
+              <li class='last'><a href='#'><span>Invitation Brochure</span></a></li>
+          </ul>
+      </li>
+      <li><a href='#'><span>Last Meet</span></a></li>
+      <li><a href='#'><span>Gallery</span></a></li>
+      <li><a href='#'><span>Students'Alumni Cell</span></a></li>
+      <li class='has-sub'><a href='#'><span>Sponsors</span></a>
+         <ul>
+          <li><a href='../2014 hover/2014 hover.html' ><span>Sponsors 2014</span></a></li>
+          <li><a href='../2013 hover/2013 hover.html' ><span>Sponsors 2013</span></a></li>
+          <li><a href='../2012 hover/2012 hover.html' ><span>Sponsors 2012</span></a></li>
+          <li class='last'><a href='../otkp hover/otkp.html' ><span>Official TimeKeeper</span></a></li>
+      </ul>
+  </li>
+  <li class='last'><a href='#'><span>Contact</span></a></li>
+</ul>			
+
+</div>
+
+</div>
+
+<br/>
+<br/>
+
+
+<br /><center><h1> SPONSORS 2014</h1></center><br /><br />
+<br />
+
+<ul id="nav-list-example">
+ <div style="background-color:#CCCC99" align="center" style="border:1px solid red">
+    <h1>CO-SPONSORS</h1></div></br >
+    <div id="new" >
+       <li>
+
+         <div class="front"><img src="images/10.png" alt="More about us" /></div>
+         <a href="http://www.bnpparibas.co.in/en/contact-us/srei-equipment-finance/" target="_blank"> <div class="back"><br /><br /><font color="#00CCFF">www.bnpparibas.co.in/</font>
+         </li></div></a></div><br /><br /><br /><br /><br /><br /></br></br></br>
+
+         <div style="background-color:#CCCC99" style="border:1px solid red"> 
+            <center><h1>MAJOR-SPONSORS</h1></cetner>
+
+            </div></br ><br />
+            <div id="new" >
+
+
+                <li>
+                  <div class="front">
+
+                    <h2><img src="images/02.png" alt="More about us" /></h2>
+
+                </div>
+                <a href="http://www.hmel.in/" target="_blank"><font color="#00CCFF">  <div class="back">
+                  <center><br /><br />http://www.hmel.in/</font></center></div></a>
+              </li>
+
+          </div><br /><br /><br /><br /><br /><br /></br></br></br>
+
+          <div style="background-color:#CCCC99" align="center" style="border:1px solid red">
+            <h1>HEALTHCARE PARTNER</h1></div></br ><br />
+            <div id="new" >
+
+
+                <li>
+                    <div class="front"><h2>	<img src="images/3.jpg" alt="More about us" /></h2></div>
+                    <a href="http://www.hillemanlabs.org/" target="_blank"><div class="back"><center><br /><br /><font color="#00CCFF">www.hillemanlabs.org/</font></center></div></a>
+                </li></div><br /><br /><br /><br /><br /><br /></br></br><br />
+
+
+                <h1><div style="background-color:#CCCC99" align="center" style="border:1px solid red">EVENT-SPONSORS</div></h1></br ><br />
+                <div id="new2" >
+                    <li>
+                        <div class="front"><h2>	<img src="images/05.jpg" alt="More about us" /></h2></div>
+                        <a href="http://www.wbsedcl.in/irj/go/km/docs/internet/webpage/HomePage.html" target="_blank"> <div class="back"><center><br /><br /><font color="#00CCFF">www.wbsedcl.in/</font></center></div></a>
+                    </li>
+
+                    <li>
+                        <div class="front"><h2>	<img src="images/6.png" alt="More about us" /></h2></div>
+                        <a href="https://www.vodafone.in/pages/index.aspx" target="_blank"> <div class="back"><center><br /><br /><font color="#00CCFF">www.vodafone.in/</font></center></div></a>
+                    </li>
+
+                    <li>
+                        <div class="front"><h2>	<img src="images/7.png" alt="More about us" /></h2></div>
+                        <a href="http://www.vanheusenindia.com/" target="_blank"> <div class="back"><center><br /><br /><font color="#00CCFF">www.vanheusenindia.com/</font></center></div></a>
+                    </li></div>
+                    <div id="new3" >
+                     <li>
+                        <div class="front"><h2>	<img src="images/2.png" alt="More about us" /></h2></div>
+                        <a href="http://www.bseindia.com/" target="_blank"> <div class="back"><center><br /><br /><font color="#00CCFF">www.bseindia.com/</font></center></div></a>
+                    </li>
+
+                    <li>
+                        <div class="front"><h2>	<img src="images/08.jpg" alt="More about us" /></h2></div>
+                        <a href="http://www.kalikasteels.com/" target="_blank"> <div class="back"><center><br /><br /><font color="#00CCFF">www.kalikasteels.com/</font></center></div></a>
+                    </li></div><br /><br /><br /><br /><br /><br /></br></br><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+                    <h1><div style="background-color:#CCCC99" align="center" style="border:1px solid red">GIFT-SPONSORS</div></h1></br ><br />
+                    <div id="new2" >
+
+                      <li>
+                        <div class="front"><h2>	<img src="images/002.jpg" alt="More about us" /></h2></div>
+                        <a href="http://www.sardamagnets.com/" target="_blank"><div class="back"><center><br /><br /><font color="#00CCFF">www.sardamagnets.com/</font></center></div></a>
+                    </li></div>
+                    <li>
+                        <div class="front"><h2>	<img src="images/03.png" alt="More about us" /></h2></div>
+                        <a href="http://www.staedtler-india.com/" target="_blank">  <div class="back"><center><br /><br /><font color="#00CCFF">www.staedtler-india.com/</font></center></div></a>
+                    </li>
+                    <li>
+                        <div class="front"><h2>	<img src="images/4.png" alt="More about us" /></h2></div>
+                        <a href="http://www.coca-colaindia.com/" target="_blank">  <div class="back"><center><br /><br /><font color="#00CCFF">www.coca-colaindia.com/</font></center></div></a>
+                    </li>
+                    <div id="new2" >
+                      <li>
+                        <div class="front"><h2>	<img src="images/14.png" alt="More about us" /></h2></div>
+                        <a href="http://www.ssdindia.in/" target="_blank"> <div class="back"><center><br /><br /><font color="#00CCFF">www.ssdindia.in/</font></center></div></a>
+                    </li></div>
+                    <li>
+                        <div class="front"><h2>	<img src="images/9.png" alt="More about us" /></h2></div>
+                        <a href="http://www.idasystems.net/" target="_blank">  <div class="back"><center><br /><br /><font color="#00CCFF">www.idasystems.net/</font></center></div></a>
+                    </li>
+                    <li>
+                        <div class="front"><h2>	<img src="images/04.png" alt="More about us" /></h2></div>
+                        <a href="http://wwwwt.i.in/" target="_blank"> <div class="back"><center><br /><br /><font color="#00CCFF">www.iwt.in/</font></center></div></a>
+                    </li>
+                    <div id="new2" >
+                     <li>
+                        <div class="front"><h2>	<img src="images/11.png" alt="More about us" /></h2></div>
+                        <a href="http://www.tatonka.com/defaulten.aspx" target="_blank"> <div class="back"><center><br /><br /><font color="#00CCFF">www.tatonka.com/</font></center></div></a>
+                    </li></div>
+                    <li>
+                        <div class="front"><h2>	<img src="images/13.png" alt="More about us" /></h2></div>
+                        <a href="http://www.indiaskylanterns.com/" target="_blank"> <div class="back"><center><br /><br /><font color="#00CCFF">www.indiaskylanterns.com/</font></center></div></a>
+                    </li>
+                    <li>
+                        <div class="front"><h2>	<img src="images/12.jpg" alt="More about us" /></h2></div>
+                        <a href="http://www.vanguardworld.com/" target="_blank">  <div class="back"><center><br /><br /><font color="#00CCFF">www.vanguardworld.com/</font></center></div></a>
+                    </li>
+                    <div id="new" >
+                     <li>
+                        <div class="front"><h2>	<img src="images/1.jpg" alt="More about us" /></h2></div>
+                        <a href="http://www.gatikwe.com/" target="_blank">  <div class="back"><center><br /><br /><font color="#00CCFF">www.gatikwe.com/</font></center></div></a>
+                    </li></div><br /> 
+
+
+                </ul></center>
+
+            </body>
+            </html>

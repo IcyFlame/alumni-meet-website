@@ -1,0 +1,29 @@
+html,body,.container
+{
+	height:100%;
+}
+.container
+{
+	display:table;
+	width: 100%;
+	margin-top: -60px;
+	/*padding: 50px 0 0 0; /*set left/right padding according to needs*/
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.row
+{
+	height: 100%;
+	display: table-row;
+}
+/*.col-md-2
+{
+	display: table-cell;
+	float: none;
+}
+.col-md-8
+{
+	display: table-cell;
+	float: none;
+}*/
