@@ -1,20 +1,24 @@
+#Semicolon delimited files will be generated out of this program
+
+delimiter = ";"
+
 # Non Technical Part
 
 data_array = ["Any","Accounting","Arts and Crafts","Banking Finance","Business Administration","Communications","Consulting","Dance","Education Management","Enterpreneurship","Event Management","Fashion Designing","Film and Media","Finance","Government Administrations","Government Relations","Graphic Design","Hotel Management","Human Relations","International Affairs","International Business","Journalism","Law enforcement","Legal Services","Market research","Marketing and Advertising","Music","Operations","Real Estate","Risk Mangement and Insurance","Sports","Systems","Visual Arts","Writing and Editing","Others"]
 
-filout = open("output.csv", "w")
+filout = open("non-technical.csv", "w")
 
 for i, j in enumerate(data_array):
 
-    number = i+1    
-
-    filout.write(j + "," + number.__str__() + "\n")
+    filout.write(j + delimiter + str(i+1) + "\n")
 
 filout.close()    
 
 # Technical Part
 
-import re
+shift = len(data_array)
+
+import re as re
 
 nameofdep = re.compile(r'.*areasofinterest\["(.*)"\]')
 
@@ -38,7 +42,7 @@ all_aois = []
 
 for line in filin:
 
-    print line
+    # print line
 
     if nameofdep.match(line):
 
@@ -55,10 +59,24 @@ for line in filin:
         depnames.append(depName)
         all_aois.append(aoi)
 
-# now the dictionary is ready. The keys are the names of the departments and the
-# values are the areas of interest.
+filin.close()        
 
-filin.close()
+##Now the two lists are ready. We can create the csv file.
+
+filout = open("technical.csv", "w")
+
+overallCount = shift + 1
+
+for i, dep in enumerate(depnames):
+
+    for aoi in all_aois[i]:
+
+        filout.write(dep + ": " + aoi + delimiter + str(overallCount) + "\n")
+        overallCount += 1
+
+filout.close()     
+
+        
 
         
 
