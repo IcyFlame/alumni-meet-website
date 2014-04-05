@@ -3,6 +3,10 @@
 
 delim = ";"
 
+inputfile = "data.csv"
+outputfile = "alloted.csv"
+notAlloted = "notalloted.csv"
+
 # create the dictionary with the name of the interest as keys
 # and the numbers allotted to the same as values.
 
@@ -30,32 +34,55 @@ filin.close()
 
 # start the allotment
 
-filin = open("data.csv", "r")
+filin = open(inputfile, "r")
 
-filout = open("alloted.csv", "w")
+filout = open(outputfile, "w")
+
+##couldNotAllot = open(notAlloted, "w")
+
+##all_there = range(1, 842, 1)
 
 for i in filin:
 
+    # the first index contains the record number.
+
     record = i.split(delim)
 
-    for k, j in enumerate(record):
+##    record.reverse()
+##    count = record.pop()
+##    record.reverse()
 
-        print k, " : ", j
+    # print record
 
-    break
+##    for k, j in enumerate(record):
+##
+##        print k, " : ", j
+##
+##    break
 
     try:
 
-        index = dicts[record[1]]
+        index1 = dicts[record[1]]
+        index2 = dicts[record[4]]
+        index3 = dicts[record[7]]
+
+##        all_there.remove(int(count))
 
     except:
 
+        # print i
+
         filout.write(i)
+##        all_there.remove(int(count))
 
         continue
 
-    filout.write(record[0] + delim + record[1] + delim + \
-                 index + "\n")
+    filout.write(record[0] + delim + record[1] + delim + index1 + delim +\
+                 record[3] + delim + record[4] + delim + index2 + delim +\
+                 record[6] + delim + record[7] + delim + index3 + "\n")
 
 filin.close()
 filout.close()
+##
+##print all_there
+##print len(all_there)
